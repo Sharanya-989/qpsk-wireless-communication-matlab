@@ -79,6 +79,43 @@ The constellation diagrams provide a visual representation of the same behavior:
 - **Low noise:** QPSK symbols form tight and clearly separated clusters.
 - **Moderate noise:** The symbol clusters remain identifiable but show noticeable spreading.
 - **High noise:** The received symbols become widely scattered, increasing the probability of incorrect symbol decisions.
+## Simulation Results
+
+### BER vs. Eb/No
+
+The BER curve shows that the error rate decreases as the Eb/No value increases, indicating improved communication reliability at higher signal-to-noise ratios.
+
+![BER vs. Eb/No](ber_vs_ebno.png)
+
+### QPSK Constellation at Moderate Noise
+
+At an Eb/No of 4 dB, the four QPSK symbol regions remain visible, although noise causes noticeable spreading around the expected symbol locations.
+
+![Moderate Noise Constellation](constellation_moderate_noise.png)
+
+### Low-Noise Constellation
+
+At a high Eb/No, the received symbols form tight and clearly separated clusters, indicating low distortion and reliable symbol detection.
+
+![Low Noise Constellation](constellation_low_noise.png)
+
+### High-Noise Constellation
+
+At a low Eb/No, the received symbols become widely scattered. The increased overlap between symbol regions leads to a higher probability of detection errors.
+
+![High Noise Constellation](constellation_high_noise.png)
+
+### BER Results
+
+| Eb/No (dB) | BER |
+|---:|---:|
+| 0 | 0.077750 |
+| 1 | 0.057250 |
+| 2 | 0.033750 |
+| 3 | 0.024500 |
+| 4 | 0.010500 |
+| 5 | 0.007000 |
+| 6 | 0.002000 |
 
 ## Requirements
 
